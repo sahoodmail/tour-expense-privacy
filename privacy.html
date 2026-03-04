@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy &mdash; Tour Expense Manager</title>
+    <title>Privacy Policy — Tour Expense Manager</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -49,54 +49,57 @@
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy &mdash; Tour Expense Manager</h1>
-        <p class="date"><strong>Effective Date:</strong> February 27, 2026</p>
+        <h1>Privacy Policy — Tour Expense Manager</h1>
+        <p class="date"><strong>Effective Date:</strong> March 5, 2026</p>
 
         <h2>1. Overview</h2>
         <p>Tour Expense Manager ("the App") helps users track travel-related expenses. All user-entered data is stored locally on your device with an optional backup to your personal Google Drive account. We do not operate remote servers storing your expense data.</p>
 
-        <h2>2. Information Accessed and Collected</h2>
+        <h2>2. Data We Collect and Access</h2>
         <ul>
-            <li><strong>Google Account Authentication:</strong> Used exclusively for secure sign-in.</li>
-            <li><strong>User Expense Data:</strong> Stored locally on your device.</li>
-            <li><strong>Google Drive Backup:</strong> Stored solely within your own personal Google Drive account (only accessed if you explicitly initiate a backup).</li>
+            <li><strong>Google Account Authentication:</strong> We request access to your <code>openid</code>, <code>profile</code>, and <code>email</code> scopes strictly to provide secure sign-in and display your name/profile picture within the app.</li>
+            <li><strong>User Expense Data:</strong> Tour names, participant lists, expense amounts, categories, and payment statuses are stored entirely locally on your device's SQLite database.</li>
+            <li><strong>Google Drive Integration:</strong> We request access to the <code>drive.appdata</code> and <code>drive.file</code> scopes. This allows the app to securely backup and restore your local expense database to a sandboxed, app-specific folder on your personal Google Drive. <strong>We cannot, and do not, read or modify any other files on your Google Drive.</strong></li>
             <li><strong>Device and Usage Information (via AdMob):</strong> Our third-party advertising partner (Google AdMob) may collect device identifiers (such as Android Advertising ID), IP addresses, and generalized usage data to serve advertisements.</li>
         </ul>
 
-        <h2>3. How Data Is Used</h2>
+        <h2>3. Google API Services User Data Policy Compliance</h2>
+        <p>Tour Expense Manager's use and transfer of information received from Google APIs to any other app adheres entirely to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>, including the <strong>Limited Use</strong> requirements.</p>
+
+        <h2>4. How Data Is Used</h2>
         <ul>
-            <li>To provide core application functionality (tracking and splitting expenses).</li>
-            <li>To allow user-initiated backup and restore of trip data to your Google Drive.</li>
-            <li>To serve relevant advertisements through the Google AdMob network.</li>
+            <li>To provide core application functionality (tracking, splitting, and settling expenses).</li>
+            <li>To allow user-initiated backup and restoration of the SQLite database to and from your Google Drive.</li>
+            <li>To serve relevant, non-intrusive advertisements through the Google AdMob network.</li>
         </ul>
 
-        <h2>4. Third-Party Advertising & AdMob</h2>
-        <p>Our app uses Google AdMob to display advertisements. To provide and personalize ads, AdMob may automatically collect certain device information, including your IP address, device identifiers, and generalized location data. <strong>No personal identifying information (such as your name or email) is shared with advertisers by us.</strong></p>
-        <p>You can opt out of personalized advertising at any time through your Android device settings (Settings > Google > Ads > Opt out of Ads Personalization).</p>
+        <h2>5. Third-Party Advertising & AdMob</h2>
+        <p>Our app uses Google AdMob to display advertisements. To provide and personalize ads, AdMob may automatically collect certain device information, including your IP address, device identifiers, and generalized location data. <strong>No personal identifying information (such as your name or email) is ever shared with advertisers by us.</strong></p>
+        <p>You can opt out of personalized advertising at any time through your Android device settings (Settings &gt; Google &gt; Ads &gt; Opt out of Ads Personalization).</p>
         <p>For more information on how Google uses this data, please visit <a href="https://policies.google.com/technologies/ads" target="_blank">Google's Privacy & Terms regarding ads</a>.</p>
 
-        <h2>5. Data Storage and Security</h2>
-        <p>Your expense data remains securely on your device. Backup files remain securely inside your personal Google Drive storage. We have no access to your Google Drive files other than the specific backup file created by this App.</p>
+        <h2>6. Data Storage and Security</h2>
+        <p>Your expense data remains securely stored on your local device. Backup files are transmitted securely over HTTPS and remain exclusively inside your personal Google Drive storage space. We do not maintain any centralized cloud servers, and we have zero access to your Google Drive contents other than the specific backup database file created by this App.</p>
 
-        <h2>6. Data Sharing</h2>
-        <p>Your personal data and expense information are <strong>never sold, rented, or shared</strong> with third parties by the developer. The app only utilizes Google Sign-In, Google Drive APIs, and Google AdMob as described above to provide core services.</p>
+        <h2>7. Data Sharing</h2>
+        <p>Your personal data, expense information, and Google authentication tokens are <strong>never sold, rented, or shared</strong> with third parties by the developer. The app only utilizes Google Sign-In, Google Drive APIs, and Google AdMob directly as described above to provide core services.</p>
 
-        <h2>7. User Control & Data Deletion</h2>
-        <p>You have full control over your data. You may:</p>
+        <h2>8. User Control & Data Deletion</h2>
+        <p>You maintain full ownership and control over your data. You may:</p>
         <ul>
-            <li>Delete your backups directly from your Google Drive account.</li>
-            <li>Sign out of Google within the app settings.</li>
-            <li>Clear the app data or uninstall the app from your device to permanently remove local data.</li>
+            <li>Delete your database backups directly from your Google Drive account (Settings &gt; Manage Apps).</li>
+            <li>Sign out of Google and revoke all access tokens directly within the app settings.</li>
+            <li>Clear the app data or completely uninstall the app from your device to permanently wipe all locally stored expense data.</li>
         </ul>
 
-        <h2>8. Children’s Privacy</h2>
-        <p>This app is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information without parental consent, please contact us.</p>
+        <h2>9. Children’s Privacy</h2>
+        <p>This app is not intended for children under 13. We do not knowingly collect personal information from children under 13.</p>
 
-        <h2>9. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
+        <h2>10. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy here. You are advised to review this Privacy Policy periodically.</p>
 
-        <h2>10. Contact Us</h2>
-        <p>If you have any questions or concerns about this Privacy Policy, please contact the developer:</p>
+        <h2>11. Contact Us</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy or how your Google data is handled, please contact the developer:</p>
         <p><strong>Mohamed Saheed</strong><br>
         Email: <a href="mailto:sahoodmail@gmail.com">sahoodmail@gmail.com</a></p>
     </div>
